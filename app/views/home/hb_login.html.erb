@@ -1,0 +1,77 @@
+<script type="text/javascript">
+        function doSubmit() 
+		{
+	        var acct = document.login.account.value;
+	        var firstChar = acct.substring(0,1);
+	        if ( firstChar == "0" ) {
+		        alert("Invalid Account Number\nAccount Numbers cannot begin with a zero.");
+		        document.login.account.select();
+		        document.login.account.focus();
+		        return false;
+	        } else {
+		        return true;
+	        }
+        }
+</script>
+<div style="width: 800px; margin: 0px auto 0px auto">
+        <%= image_tag "header.gif", :alt => "", :width=>800, :height=>92 %>
+        <div style="width: 526px; border: 1px solid black; background-color: white; margin: 30px auto 0px auto; padding-bottom: 20px;">
+            <div style="width: 240px; border: 1px solid black; background-color: #ffffff; padding: 7px; margin: 5px auto 0px auto">
+                <form id="login" method="post" action="/hbv3_1/login.asp" onsubmit="return doSubmit();">
+                    <fieldset style="border: 0 none; margin-bottom: 10px; padding: 0px;">
+                        <input type="hidden" name="emailContact" value="margaret@espeeco.org" />
+                        <input type="hidden" name="creditunion" value="793" />
+                        <input type="hidden" name="cuname" value="Espeeco" />
+                        <input type="hidden" name="service" value="Espeeco" />
+                        <input type="hidden" name="fiId" value="793" />
+                        <div style="color: black; font-family: Arial; font-size: 13px; font-weight: bold;">
+                            <div style="width: 120px; text-align: right; float: left; margin-right: 15px;">Account Number:</div>
+                            <input name="account" type="text" style="float: left;" size="10"/>
+                            <br style="clear:both" />
+                            <br />
+                            <div style="width: 120px; text-align: right; float: left; margin-right: 13px;" 
+                                class="style2">PIN:</div>
+                            <input name="pin" type="password" style="float: left;" size="10" 
+                                class="style1"/>
+                            <br style="clear: both;" />
+                        </div>
+                        <div style="text-align: center; padding-top: 10px;">
+                            <input type="submit" value="LOGIN" />
+                        </div>
+                    </fieldset>
+                </form>
+                
+                <div style="text-align: center; margin: 25px auto 0px auto; font-size: 10px">
+                    <%= link_to "Need help?", location_path, :style=>"font-size: 13px; font-weight: bold;" %>
+                    <br />
+                    Click here to
+                    <br />
+                    obtain contact
+                    <br />
+                    information.
+                </div>
+            </div>
+            <div style="padding: 15px 5px 0px 5px; font-size: 13px; text-align: left; margin-top: 40px; border-top: 1px solid black">
+                Enter now to discover the fast, convenient access available through Web Teller. 
+                With your Personal Identification Number (PIN) you can see your account, view transactions and even transfer funds - 
+                all at the touch of your fingertips. And if you ever need help, we're just an 
+                <%= link_to "email", contact_path %> away!
+                <br /> <br />
+                <span style="font-style: italic;">
+                <span style="font-weight: bold;">Please note:</span> Your WebTeller PIN is not the same as your debit card PIN. 
+                If you've never used WebTeller or if you've forgotten your PIN, please 
+                <%= link_to "contact us by email", contact_path %>.<br /><br />
+                <strong>Effective June 30, 2010 a monthly service fee of $5.00 will be charged to checking accounts only.</strong>
+                </span>
+            </div>
+            <div style="margin-top: 30px; padding: 50px 40px 20px 40px; font-size: 10px; color: #808080; border-top: 1px solid black;">
+                Your savings federally insured to at least $250,000 and backed by the full faith
+                and credit of the United States Government. We do business in accordance
+                with the Federal Fair Housing Law &amp; the Equal Credit Opportunity Act.
+                
+            </div>
+            <p>
+                <%= link_to image_tag("valid-xhtml10.png", :alt=>"Valid XHTML 1.0 Strict", :height=>31, :width=>88), "http://validator.w3.org/check?uri=referer" %>
+           </p>
+        </div>
+    </div>

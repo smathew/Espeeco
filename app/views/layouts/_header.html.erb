@@ -1,0 +1,76 @@
+<div id="container">
+
+   <div id="header">
+     <%= image_tag "header.gif", :alt=>"header" %>
+   
+   <div id="nav">
+     <ul id="menu" class="clearfix">       
+			<li>
+				<a href="#" class="first">About ESPEECO </a><a href="#" class="MenuBarItemSubmenu style3 style7"></a>
+				<ul>
+					<li><%= link_to "Home", root_path %></li>
+					<li><%= link_to "History", history_path %></li>
+					<li><a href="privacy.asp">Privacy</a></li>
+                    <li><%= link_to "Holiday", holiday_path %></li>
+					<li><%= link_to "Contact us", contact_path %></li>
+				</ul>
+			</li>
+			<li>
+				<a href="#">Online Services</a>
+				<ul>
+					<li><%= link_to "Home Banking", hb_login_path %></li>
+					<li><a href="membership.asp">How to Join</a></li>
+					<li><%= link_to "Helpful Links", links_path %></li>
+					<li><a href="audio.asp">Audio Response (coming soon)</a></li>
+				</ul>
+			</li>
+			<li>
+				<a href="products.asp">Products &amp; Services</a>
+				<ul>
+					<li><a href="loans.asp">Loans</a>
+                    	<ul>
+                           <li><a href="comingsoon.asp">New and Used Auto</a></li>
+                           <li><a href="comingsoon.asp">Mortgage Loans</a></li>
+                           <li><a href="comingsoon.asp">New and Used RV's</a></li>
+                           <li><a href="comingsoon.asp">Signature / Line of Credit</a></li>
+                           <li><a href="comingsoon.asp">Classic Autos</a></li>
+                        </ul>
+                       
+                    </li>
+					<li><a href="comingsoon.asp">Member Services</a>
+                    	<ul>
+                           <li><a href="comingsoon.asp">Traveller's Checks</a></li>
+                           <li><a href="comingsoon.asp">Money Orders</a></li>
+                           <li><a href="comingsoon.asp">Notary Services</a></li>
+                           <li><%= link_to "Blue Book Quotes", "http://www.kbb.com/?trid=20&nbsp;psid=1-114-6700-5-4-3&nbsp;gclid=CLeT99rv55QCFQZinAodf1MrSw", :rel=>"external" %></li>
+                        </ul>
+                    </li>
+					<li><a href="comingsoon.asp">Regular Shares</a></li>
+					<li><a href="comingsoon.asp">Sharedraft</a></li>
+					<li><a href="comingsoon.asp" rel="external">Money Market</a></li>
+					<li><%= link_to "MemberCONNECT", products_path %></li>
+				</ul>
+			</li>
+			<li>
+				<a href="#" class="MenuBarItemSubmenu style3 style7">What's New</a><a href="#"></a>
+				<ul>
+					<li><a href="comingsoon.asp">Upcoming Events</a></li>
+				</ul>
+			</li>
+			<li>
+				<a href="#">Current Rates</a>
+				<ul>
+					<li><%= link_to "Share Draft Fees", fees_path %></li>
+					<li><a href="comingsoon.asp">Loan Rates</a></li>
+				</ul>
+			</li>
+			<li><a href="#"> Location &amp; Hours</a>
+			  <ul>
+			    <li><%= link_to "Credit Union Hours", location_path %></li>
+			    <li><a href="comingsoon.asp">ATM Location</a></li>
+		      </ul>
+			</li>
+		</ul>
+    </div>    
+   </div>
+<div id="main" class="clearfix">          

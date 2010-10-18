@@ -1,0 +1,397 @@
+body {
+	top: 0px;
+	left:0px;
+	margin: 0px;
+	padding: 0;
+	font-size: 13px;
+	line-height: 18px;
+	font-family: Arial, Helvetica, sans-serif;
+	background-image: url(../images/background.jpg);
+	background-repeat: repeat;
+	background-attachment: fixed;
+}
+
+#container {
+	width: 800px;
+	padding: 0 none;
+	margin: 10px auto 0 auto;
+	border: solid #333 1px;
+	background: #ffffff;
+}
+
+
+
+#header {
+	width: 800px;
+	height: 92px;
+	text-decoration: none;
+	display: block;
+}
+
+#header img {
+	border: 0 none;
+	margin: 0 none;
+	display: block;
+}
+
+#nav {
+	width: 800px;
+}
+
+
+
+
+#main {
+	width:780px;
+	padding:0px 10px 0px 10px;
+} 
+
+#main .mainleft {
+	width: 440px;
+	float: left;
+	padding-right: 10px;
+} 
+#main .mainright {
+	width: 300px;
+	float: left;
+	padding: 0 10px 10px 10px;
+	margin-left: 10px;
+} 
+
+
+
+#welcome {
+	width: 220px;
+	float: left;
+} 
+
+#companylinks {
+	width: 220px;
+	float: left;
+} 
+
+
+
+.companylinks {
+	line-height: 32px;
+	background: #F7F9FB;
+	border-right: .5px solid gray;
+	border-left: .5px solid gray;
+	border-bottom: .5px solid gray;
+	margin-left: -32px;
+	list-style: none;
+	background-image: url(../images/arrow.jpg);
+	background-repeat: no-repeat;
+	background-position: 10px;
+	padding-left: 23px;
+	font-size: 11px;
+}
+.companylinks:hover {
+	background: #efefef;
+	background-image: url(../images/arrow.jpg);
+	background-repeat: no-repeat;
+	background-position: 10px;
+	padding-left: 27px;
+}
+
+.companylinks a {
+	text-decoration: none;
+	color: #333;
+}
+.noarrow {
+	line-height: 32px;
+	background: #F7F9FB;
+	border: 1px solid gray;
+	margin-left: -32px;
+	margin-top: -13px;
+	padding-left: 4px;
+	list-style: none;
+	color: #333;
+	font-weight: bold;
+	font-size: 12px;
+}
+
+
+
+
+
+
+
+
+
+/*******************/
+/*     TABLES      */
+/*******************/
+
+table.default {
+	margin: 0 auto 0 auto; 
+	width: auto;
+	border: 0 none;
+}
+table.default td {
+	padding: 4px;
+}
+
+
+
+table.contact {
+	width: auto;
+	margin: 0 auto 0 auto;
+}
+table.contact td {
+	width: 50%;
+	text-align: left;
+	padding: 3px;
+}
+table.contact th {
+	width: 50%;
+	text-align: left;
+}
+
+
+
+table.holiday {
+	margin: 0 auto 0 auto; 
+	width: 50%;
+	border: 0 none;
+	background: #efefef;
+	border: 1px solid #333;
+}
+table.holiday td {
+	padding: 4px;
+}
+
+
+
+
+
+
+table.products {
+	width: 95%;
+	border: solid 1px #cecece;
+	margin: 0 auto 0 auto;
+	border-spacing: 0px;
+	border: 1px gray solid;
+
+}
+
+table.products td {
+	width: 30%;
+	text-align: center;
+	border-spacing: 0px;
+}
+
+
+
+
+
+
+
+
+table.fees {
+	width: 75%;
+	border: inset 1px gray;
+	border-spacing: 1px;
+	margin: 0 auto 0 auto;
+}
+table.fees th {
+	background: #CCC;
+	border: intset 1px gray;
+	border-spacing: 1px;
+}
+table.fees td {
+	border: inset 1px gray;
+	border-spacing: 1px;
+}
+
+
+/*********END TABLES********/
+
+
+
+
+
+
+
+/*****************/
+/*     TEXT     */
+/*****************/
+
+h1 {
+	font-size: 18px;
+	color: 333;
+	text-align: center;
+} 
+
+
+
+
+
+p.smallprint {
+	font-size: 10px;
+	color: #666;
+	vertical-align: middle;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+a {
+	color: ;
+}
+
+a:hover {
+	color: #;
+}
+
+a.footer {
+	color: #;
+}
+
+a.footer:hover {
+	color: #;
+}
+
+/*********END TEXT ********/
+
+
+
+
+
+
+
+/*****************/
+/*    FIXINS     */
+/*****************/
+.clearfix {
+	height: 1%;
+}
+
+.clearfix:after {
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+
+.centertext {
+	text-align: center;
+}
+
+
+img {
+	border: 0 none;
+	color: #2131A5;
+}
+
+fieldset {
+	border: 0 none;
+}
+
+
+.fright {
+	float: right;
+	padding-left: 10px;
+}
+.fleft {
+	float: left;
+	padding-right: 10px;
+}
+/*********END FIXINS***********/
+
+
+
+
+
+
+ 
+
+
+
+
+#footer {
+	text-align: center;
+	float: left;
+	width:800px;
+	padding: 0 none;
+}
+
+
+
+#footer table{
+	font-size: 10px;
+	width: 100%;
+}
+#footer table td{
+	padding: 5px;
+	width: 30%
+}
+
+#footer a{
+	padding: 1px;
+	font-size: 12px;
+	width: 613px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*inherited from old site*/
+
+#apDiv1 {
+	position:absolute;
+	width:258px;
+	height:159px;
+	z-index:1;
+	left: 591px;
+	top: 337px;
+}
+.style10 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: medium;
+}
+#apDiv2 {
+	position:absolute;
+	width:271px;
+	height:144px;
+	z-index:2;
+}
+.style11 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+}
+.style12 {
+	margin-bottom: 0px;
+}
+.style13 {font-family: Arial, Helvetica, sans-serif}
+.style14 {font-family: Arial, Helvetica, sans-serif; font-size: xx-small; }
